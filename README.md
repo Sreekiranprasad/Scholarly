@@ -11,7 +11,7 @@ A scholar recommendation tool to identify potential scholars in the industry
 <br />
 
 
-## Workflow - Recommending Scholars for Proposals
+## Workflow - Recommending Scholars Queries
 
 
 
