@@ -1,32 +1,11 @@
 OUTPUT_PATH: "Output/"
-SCHOLAR_DATA: "Output/Scholars_data.csv"
-PROPOSAL_ID: "PD-18-1263"
+SCHOLAR_DATA: "Scholars_data.csv"
 TOP_K_SCHOLARS: 20
 CPU_COUNT: 20
-CSV_URL: https://www.grants.gov/grantsws/rest/opportunities/search/csv/download?osjp={startRecordNum:0,sortBy:openDate|desc,oppStatuses:forecasted|posted|closed|archived,rows:100000}
-XML_URL: 'https://www.grants.gov/xml-extract.html'
-AGENCIES_: ['National Institutes of Health', 'National Science Foundation']
-AGENCIES: ['National Science Foundation']
-AGENCIES_SAVE_FILENAMES_: ['nih_proposals.csv', 'nsf_proposals.csv']
-AGENCIES_SAVE_FILENAMES: ['nsf_proposals.csv']
-AGENCIES_EXTRACTED_FILENAME_DICT : {'National Institutes of Health' : 'nih_proposals_cleaned.csv' ,
-'National Science Foundation' : 'nsf_proposals_cleaned.csv'}
-AGENCIES_FILENAME_DICT : {'National Institutes of Health' : 'nih_proposals.csv' , 'National Science Foundation' : 'nsf_proposals.csv'}
 PUBLICATION_DATASET: "PublicationDataset.csv"
 ANALYTICAL_DATASET: "AnalyticalDatabase.csv"
-YEAR_WISE_PUBLICATION_DATASET: "YearUserDataset.csv"
 SCHOLARS_DATASET: "ScholarsDataset.csv"
-OPEN_PROPOSALS_DATASET: "OpenProposals.csv"
-GRANTS_DATASET: "GrantsDataset.csv"
-GRANTS_DOWNLOAD_FOLDER: "Data/"
-GRANTS_DOWNLOAD_CSV_FILENAME: "GrantsInfoData.csv"
-PROPOSAL_RECOMMENDATIONS_FILENAME: 'TopScholars.csv'
+RECOMMENDED_DATASET: 'Recommendations.csv'
 UNIV_DETAILS : {'TAMU':{'BASE_URL': "https://api.library.tamu.edu/scholars-discovery/individual/search/advanced?page=1&size=", 
                   'END_URL': "&sort=name_sort,asc&fl=name&class.filter=Person&class.opKey=EQUALS&filters=class",'PROFILE_URL': "https://api.library.tamu.edu/scholars-discovery/individual/",'STOPWORDS' : ["texas","university","qatar", "may","business","school","transportation","institute"]}}
 PRETRAINED_MODELS: ['stsb-roberta-large', 'all-MiniLM-L6-v2', 'all-mpnet-base-v2']
-TAGS: ['OpportunityID', 'OpportunityTitle', 'OpportunityNumber', 'OpportunityCategory', 'FundingInstrumentType', 
-       'CategoryOfFundingActivity', 'CFDANumbers', 'EligibleApplicants', 'AdditionalInformationOnEligibility', 
-       'AgencyCode', 'AgencyName', 'PostDate', 'CloseDate', 'LastUpdatedDate', 'AwardCeiling', 'AwardFloor',
-       'EstimatedTotalProgramFunding', 'ExpectedNumberOfAwards', 'Description', 'ArchiveDate', 
-        'AdditionalInformationURL', 'AdditionalInformationText', 'GrantorContactEmail', 
-        'GrantorContactEmailDescription', 'GrantorContactText']
